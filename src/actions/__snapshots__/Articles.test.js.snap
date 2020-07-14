@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Articles Actions getArticles on failure 1`] = `
+Object {
+  "error": Object {
+    "error": "test error",
+  },
+  "type": "GET_ARTICLES_FAILURE",
+}
+`;
+
+exports[`Articles Actions getArticles on success 1`] = `
+Object {
+  "articlesList": Array [
+    Object {
+      "body": "test body",
+      "id": 1,
+      "title": "test title",
+      "userId": "test userId",
+    },
+  ],
+  "type": "GET_ARTICLES_SUCCESS",
+}
+`;
+
+exports[`Articles Actions getArticlesFailure updated with error 1`] = `
+Array [
+  Object {
+    "error": Object {
+      "error": "error occured while processing the request",
+    },
+    "type": "GET_ARTICLES_FAILURE",
+  },
+]
+`;
+
+exports[`Articles Actions getArticlesSuccess called with updated data 1`] = `
+Array [
+  Object {
+    "articlesList": Object {
+      "body": "test body",
+      "id": 1,
+      "title": "Example",
+      "userId": "Testing",
+    },
+    "type": "GET_ARTICLES_SUCCESS",
+  },
+]
+`;

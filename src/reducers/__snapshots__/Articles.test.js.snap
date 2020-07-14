@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Articles reducer Articles reducer handles GET_ARTICLES_FAILURE as expected 1`] = `
+Object {
+  "error": Object {
+    "error": "test error",
+  },
+}
+`;
+
+exports[`Articles reducer Articles reducer handles GET_ARTICLES_SUCCESS as expected 1`] = `
+Object {
+  "articlesList": Array [
+    Object {
+      "body": "test body",
+      "id": 1,
+      "title": "test title",
+      "userId": "test userId",
+    },
+  ],
+}
+`;
+
+exports[`Articles reducer Articles reducer returns the initial state when an action type is not passed 1`] = `
+Object {
+  "articlesList": Array [],
+}
+`;
